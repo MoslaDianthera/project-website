@@ -1,0 +1,47 @@
+<!-- <header>申請帳號</header> -->
+<!-- 綁定表單名稱 -->
+<!-- <form id="form" class="topBefore" [formGroup]="applyForm" (ngSubmit)="register()"> -->
+	<!-- formControlName 為剛剛建立的表單控制元件名稱 -->
+        <!-- 帳號*: <input id="name" type="text" formControlName="userName" placeholder="請輸入帳號">
+		密碼*: <input type="password" formControlName="password" placeholder="請輸入密碼(至少6位數)">
+        信箱*: <input id="email" type="email" placeholder="請輸入信箱">
+               <button  type="submit" [disabled]="applyForm.invalid">送出</button>
+  
+</form> -->
+
+
+
+
+
+
+
+
+<h1 >申請帳號</h1>
+<!-- 綁定表單名稱 -->
+<form [formGroup]="applyForm" (ngSubmit)="register()"> 
+    <!-- formControlName 為剛剛建立的表單控制元件名稱 -->
+    <div>
+		帳號*: <input type="text" formControlName="userName" placeholder="請輸入帳號">
+		<!-- <span *ngIf="applyForm.get('userName').invalid && applyForm.get('userName').touched">請輸入帳號</span> -->
+	</div>
+	<div>
+		密碼*: <input type="password" formControlName="password" placeholder="請輸入密碼(至少6位數)">
+		<!-- <span *ngIf="applyForm.get('password').invalid && applyForm.get('password').touched">請輸入至少六位數密碼</span> -->
+	</div>
+	<div>
+		信箱*: <input type="email" formControlName="email" placeholder="請輸入信箱">
+		<!-- <span *ngIf="applyForm.get('email').invalid && applyForm.get('email').touched">請輸入電子郵件</span> -->
+	</div>
+    <button id="btnsub" type="submit" [disabled]="applyForm.invalid">送出</button>
+</form>
+
+<p>表單狀態：
+</p>
+{{applyForm.value |json}}
+<ul>
+    <li *ngFor="let user of users">
+      <strong>帳號:</strong> {{ user.userName }}<br>
+      <strong>密碼:</strong> {{ user.password }}<br>
+      <strong>信箱:</strong> {{ user.email }}<br>
+    </li>
+  </ul>

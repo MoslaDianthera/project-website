@@ -1,0 +1,11 @@
+
+
+<ul class="productall" *ngFor="let product of products">
+    <li>ID: {{ product.id }}</li>
+    <li class="productname">商品名稱: {{ product.title }}</li>
+    <li class="price">金額: {{ product.price }}</li>
+    <img class="image" [src]="product.image" alt="{{ product.title }} Image">
+    <button (click)="deleteProduct(product.id)">Delete</button>
+    <!-- Add other product information here -->
+  </ul>
+  
