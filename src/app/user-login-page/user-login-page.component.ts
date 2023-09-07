@@ -1,6 +1,6 @@
 // login.component.ts
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { Router } from "@angular/router";
 
@@ -24,5 +24,8 @@ export class UserLoginPageComponent {
       alert('登入失敗，請檢查用戶名和密碼！');
       console.log('登入失敗，請檢查用戶名和密碼！');
     }
+  }
+  ngOnInit(): void {
+    
   }
 }

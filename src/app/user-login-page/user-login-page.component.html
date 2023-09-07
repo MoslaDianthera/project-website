@@ -1,14 +1,16 @@
 <!-- login.component.html -->
 <app-nav></app-nav>
-<h1>登入</h1>
-<div>
-  <label for="userName">帳號: </label>
-  <input type="text" id="userName" [(ngModel)]="userName">
-</div>
-<div>
-  <label for="password">密碼: </label>
-  <input type="password" id="password" [(ngModel)]="password">
-</div>
-<div>
-  <button (click)="login()">登入</button>
+<div class="container">
+  <h1>登入</h1>
+  <form action=""  class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label for="userName">帳號: </mat-label>
+      <input type="text" id="userName" matInput  [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" placeholder="請輸入帳號">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label  for="password">密碼: </mat-label>
+      <input type="password" matInput [(ngModel)]="password" id="password" [ngModelOptions]="{standalone: true}" placeholder="請輸入密碼(至少6位數)">
+    </mat-form-field>
+      <button mat-raised-button id="btnsub" type="submit"  (click)="login()">登入</button>
+    </form>
 </div>

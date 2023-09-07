@@ -1,26 +1,15 @@
-/* .productall {
+.productall {
     background-color: rgb(183, 205, 247);
     border-radius: 4px;
     font-size: 1.5rem;
 }
 .image {
     width: 4%;
-} */
+}
 
-.demo-table {
+table {
     width: 100%;
   }
-  
-  .mat-mdc-row .mat-mdc-cell {
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
-    cursor: pointer;
-  }
-  
-  .mat-mdc-row:hover .mat-mdc-cell {
-    border-color: currentColor;
-  }
-  
-  .demo-row-is-clicked {
-    font-weight: bold;
-  }
+.btn {
+    float: right;
+}

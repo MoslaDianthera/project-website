@@ -2,7 +2,7 @@ input.ng-invalid.ng-touched{
     border:1px solid red
   }
 
-  @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+  /* @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #4d4946;
@@ -38,11 +38,11 @@ input.ng-invalid.ng-touched{
   
   input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
     color: #bbb5af;
-  }
+  } */
   
   /* on hover placeholder */
   
-  input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  /* input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
     color: #997c67;
     font-size: 1rem;
   }
@@ -148,4 +148,23 @@ input.ng-invalid.ng-touched{
 
   #btnsub {
     margin-top: 50px;
+  } */
+
+.container {
+  margin-left: 30px;
+}
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
   }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+  
+  
